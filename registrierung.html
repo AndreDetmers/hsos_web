@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+     <meta charset="utf-8">
+    <title>Registrierung</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="css/startseite.css">
+</head>
+
+<body>
+    <header>
+        <h1>
+            Anmeldung/Registrierung
+        </h1>
+    </header>
+    <div>
+        <nav>
+            <ul class="ul-hloben">
+                <li class="li-hloben" style="font-size:2em"><a class="li-a-hloben" href="index.html">&#8962;</a></li>
+                <li class="li-hloben"><a class="li-a-hloben" href="biere.html">Biere</a></li>
+                <li class="li-hloben"><a class="li-a-hloben" href="tastings.html">Tastings</a></li>
+                <li class="li-hloben"><a class="li-a-hloben" href="zubehoer.html">Zubehör</a></li>
+                <li class="li-hloben li-last-child" style="float:right"><a class="li-a-hloben" href="warenkorb.html">&#8364;</a></li>
+                <li class="li-hloben active" style="float:right"><a class="li-a-hloben" href="registrierung.html">Anmeldung</a></li>
+                <li class="li-hloben" style="float:right"><a class="li-a-hloben" href="kontakt.html">Kontakt</a></li>
+
+            </ul>
+        </nav>
+    </div>
+
+        <h2 align="center">Anmeldung</h2>
+        <form align="center">
+            <p>
+                <input type="text" value="Email oder Benutzername"><br/>
+            </p>  
+            <p>
+                <input type="password" value="Passwort" />
+            </p>
+            <p>
+                <input type="submit" value="Weiter" />
+            </p>
+        </form>
+        
+        <h2 align="center">Registrierung</h2>
+        <div class="container">
+        <form action="/biertasting/index.html" method="GET">
+            <div class=row>
+                <div class=col-md-6>
+                    <p>
+                    <div class=relative><strong>Name</strong></div>
+                    <div class=relative><input type="text"></br></div>
+                    </p>
+                </div>
+                <div class=col-md-6>
+                    <p>
+                    <div class=relative><strong>Vorname</strong></div>
+                    <div class=relative><input type="text"></br></div>
+                    </p>
+                </div>
+                <div class=col-md-6>
+                    <p>
+                    <div class=relative><strong>Benutzername</strong></div>
+                    <div class=relative><input type="text"/><br/></div>
+                    </p>
+                </div>
+                <div class=col-md-6>
+                    <p>
+                    <div class=relative><label for="gebdat"><strong>Geburtsdatum</strong></div>
+                    <div class=relative><input type="date" id="gebdat" name=""></label></div>
+                    </p>
+                </div>
+                <div class=col-md-6>
+                    <div class=relative><label for="country"><strong>Land</strong></label></div>
+                    <div class=relative>
+                    <select id="country" name="country">
+                        <option value="Deutschland">Deutschland</option>
+                        <option value="England">England</option>
+                        <option value="Niederlande">Niederlande</option>
+                        <option value="Schweiz">Schweiz</option>
+                        <option value="Österreich">Österreich</option>
+                    </select></div>
+                </div>
+                    <p>
+                    <div class=relative><strong>Emailadresse</strong></div>
+                    <div class=relative><input type="email" name="email"><br/></div>
+                    </p>
+                <div class=col-md-6>
+                    <p>
+                    <div class=relative><strong>Passwort</strong></div>
+                    <div class=relative><input type="password"/></div>
+                    </p>
+                </div>
+                <div class=col-md-6>
+                    <p>
+                    <div class=relative><strong>Passwort wiederholen</strong></div>
+                    <div class=relative><input type="password"/></div>
+                    </p>
+                </div>
+                <div class=col-md-6>
+                    <p>
+                    <div class=relative><strong>Männlich</strong></div>
+                    <div class=relative><input type="checkbox" name="gender" value="male" /><br/></div>
+                    </p>
+                </div>
+                <div class=col-md-6>
+                    <p>
+                    <div class=relative><strong>Weiblich</strong></div>
+                    <div class=relative><input type="checkbox" name="gender" value="female" /><br/></div>
+                    </p>
+                </div>
+                    <p>
+                    <div class=mitte><input type="submit" value="Weiter" /></div>
+                    </p>
+        </form>
+        </div>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+
+</body>
+
+</html>
