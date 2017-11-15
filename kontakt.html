@@ -1,28 +1,27 @@
 <!DOCTYPE html>
-
 <html>
 
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>
-        Biertasting
+        Kontakt
     </title>
+
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 
 <body>
-    <!--onpageshow="alter()"-->
-    <div class="container">
+   <div class="container">
         <h1 align=center margin=0 0 30px><u>Biertasting!</u></h1>
         <h2 align=center>
             <I>"Bewerte hier jedes Bier einfach und schnell"</I>
         </h2>
         <div class="row">
             <div class="col">
-                <nav class="navbar navbar-expand-lg navbar-light navbar-fixed-top" style="background-color: var(--c-blue)">
-
+    <nav class="navbar navbar-expand-lg navbar-light navbar-fixed-top" style="background-color: var(--c-blue)">
+                    
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
   </button>
 
@@ -33,18 +32,17 @@
                             </li>
                             <li class="nav-item active">
                             </li>
-                             <li class="nav-item">
+                            <li class="nav-item">
                                 <div class="dropdown">
-                                <a class="nav-link active" href="/master/biere.html">Biere</a>
+                                <a class="nav-link" href="/master/biere.html">Biere</a>
                                <div class="dropdown-content">
                                     <a href="#">Link 1</a>
                                     <a href="#">Link 2</a>
                                     <a href="#">Link 3</a>
                                     </div>
                                  </div> 
-                            </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="/master/kontakt.html">Kontakt</a>
+                                <a class="nav-link active" href="/master/kontakt.html">Kontakt</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="/master/registrierung.html">Anmeldung</a>
@@ -59,50 +57,45 @@
                         </form>
                     </div>
                 </nav>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-3 borderright" id="news-side">
-                        <!-- Hier wird Inhalt dynamisch eingefügt -->
+    <article>
+        <div class="container">
+            <div class=row>
+                <h3 align="center">Bei Fragen, Problemen etc. können Sie gerne unseren Support anschreiben</h2>
+                    <div class=col-md-2></div>
+                    <div class=col-md-8>
+                        <p>
+                            <div class=relative><strong>Ihre Email-Adresse:</strong></div>
+                            <div class=relative><input type="email" name="email" /><br/></div>
+                        </p>
                     </div>
-                    <div class="col-md-9">
-                        <div class="container-fluid">
-                            <div class="row" id="biercontainer">
-                                <!-- Hier wird Inhalt dynamisch eingefügt -->
+                    <div class=col-md-2></div>
+                    <div class=col-md-2></div>
+                    <div class=col-md-8>
+                        <p>
+                            <div class=relative><strong>Ihr Name:</strong></div>
+                            <div class=relative><input type="text" name="name" /><br/></div>
+                        </p>
+                    </div>
+                    <div class=col-md-2></div>
+                    <div class=col-md-2></div>
+                    <div class=col-10>
+                        <p>
+                            <div class="form-group">
+                                <label for="comment"><strong>Ihre Nachricht:</strong></label>
+                                <textarea class="form-control" rows="8" id="comment"></textarea>
                             </div>
-                        </div>
+                        </p>
                     </div>
-                </div>
-                <script src="https://www.gstatic.com/firebasejs/4.6.1/firebase-app.js"></script>
-                <script src="https://www.gstatic.com/firebasejs/4.6.1/firebase-database.js"></script>
-                <script src="js/myScript1.js"></script>
-                <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-                <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
-                <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
-
-                <script type="text/javascript">
-                    
-                    bierliste();
-                    newsliste();
-                    
-                </script>
-
-                <!--Start of Tawk.to Script-->
-                <script type="text/javascript">
-                    var Tawk_API = Tawk_API || {},
-                        Tawk_LoadStart = new Date();
-                    (function() {
-                        var s1 = document.createElement("script"),
-                            s0 = document.getElementsByTagName("script")[0];
-                        s1.async = true;
-                        s1.src = 'https://embed.tawk.to/59fc5ffd198bd56b8c03921e/default';
-                        s1.charset = 'UTF-8';
-                        s1.setAttribute('crossorigin', '*');
-                        s0.parentNode.insertBefore(s1, s0);
-                    })();
-                </script>
-                <!--End of Tawk.to Script-->
-
+            </div>
+        </div>
+                    <div class="Butpos">
+                            <input type="submit" value="Absenden" class="submit" />
+                    </div>
+    </article>
+    <script src="js/myScript1.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
 </body>
 <var class="container-fluid">
     <footer>

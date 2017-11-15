@@ -5,72 +5,162 @@
      <meta charset="utf-8">
     <title>Registrierung</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="css/startseite.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 
 <body>
-    <header>
-        <h1>
-            Anmeldung/Registrierung
-        </h1>
-    </header>
+    <div class="container">
+        <h1 align=center margin=0 0 30px><u>Biertasting!</u></h1>
+        <h2 align=center>
+            <I>"Bewerte hier jedes Bier einfach und schnell"</I>
+        </h2>
+        <div class="row">
+            <div class="col">
     <div>
-        <nav>
-            <ul class="ul-hloben">
-                <li class="li-hloben" style="font-size:2em"><a class="li-a-hloben" href="index.html">&#8962;</a></li>
-                <li class="li-hloben"><a class="li-a-hloben" href="biere.html">Biere</a></li>
-                <li class="li-hloben"><a class="li-a-hloben" href="tastings.html">Tastings</a></li>
-                <li class="li-hloben"><a class="li-a-hloben" href="zubehoer.html">Zubehör</a></li>
-                <li class="li-hloben li-last-child" style="float:right"><a class="li-a-hloben" href="warenkorb.html">&#8364;</a></li>
-                <li class="li-hloben active" style="float:right"><a class="li-a-hloben" href="registrierung.html">Anmeldung</a></li>
-                <li class="li-hloben" style="float:right"><a class="li-a-hloben" href="kontakt.html">Kontakt</a></li>
+        <nav class="navbar navbar-expand-lg navbar-light navbar-fixed-top" style="background-color: var(--c-blue)">
+                    
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+  </button>
 
-            </ul>
-        </nav>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav mr-auto">
+                            <li class="nav-item">
+                                <a class="nav-link" href="/master/index.html">Home</a>
+                            </li>
+                            <li class="nav-item active">
+                            </li>
+                            <li class="nav-item">
+                                <div class="dropdown">
+                                <a class="nav-link" href="/master/biere.html">Biere</a>
+                               <div class="dropdown-content">
+                                    <a href="#">Link 1</a>
+                                    <a href="#">Link 2</a>
+                                    <a href="#">Link 3</a>
+                                    </div>
+                                 </div> 
+                            <li class="nav-item">
+                                <a class="nav-link" href="/master/kontakt.html">Kontakt</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" href="/master/registrierung.html">Anmeldung</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Warenkorb</a>
+                            </li>
+                        </ul>
+                        <form class="form-inline my-2 my-lg-0">
+                            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                            <button class="btn btn-outline-success my-2 my-sm-0" type="submit" style="color:var(--grey);border-color:var(--grey);hover-color:var(--grey)">Search</button>
+                        </form>
+                    </div>
+                </nav>
     </div>
 
-        <h2 align="center">Anmeldung</h2>
-        <form align="center">
-            <p>
-                <input type="text" value="Email oder Benutzername"><br/>
-            </p>  
-            <p>
-                <input type="password" value="Passwort" />
-            </p>
-            <p>
-                <input type="submit" value="Weiter" />
-            </p>
-        </form>
-        
+       <div class="container">
+    
+
+    <div class="omb_login">
+    	<h3 class="omb_authTitle">Login or <a href="neu.html">Sign up</a></h3>
+		<div class="row omb_row-sm-offset-3 omb_socialButtons">
+    	    <div class="col-xs-4 col-sm-2">
+		        <a href="neu.html" class="btn btn-lg btn-block omb_btn-facebook">
+			        <i class="fa fa-facebook visible-xs"></i>
+			        <span class="hidden-xs">Facebook</span>
+		        </a>
+	        </div>
+        	<div class="col-xs-4 col-sm-2">
+		        <a href="neu.html" class="btn btn-lg btn-block omb_btn-twitter">
+			        <i class="fa fa-twitter visible-xs"></i>
+			        <span class="hidden-xs">Twitter</span>
+		        </a>
+	        </div>	
+        	<div class="col-xs-4 col-sm-2">
+		        <a href="neu.html" class="btn btn-lg btn-block omb_btn-google">
+			        <i class="fa fa-google-plus visible-xs"></i>
+			        <span class="hidden-xs">Google+</span>
+		        </a>
+	        </div>	
+		</div>
+
+		<div class="row omb_row-sm-offset-3 omb_loginOr">
+			<div class="col-xs-12 col-sm-6">
+				<hr class="omb_hrOr">
+				<span class="omb_spanOr">or</span>
+			</div>
+		</div>
+
+		<div class="row omb_row-sm-offset-3">
+			<div class="col-xs-12 col-sm-6">	
+			    <form class="omb_loginForm" action="" autocomplete="off" method="POST">
+					<div class="input-group">
+						<span class="input-group-addon"><i class="fa fa-user"></i></span>
+						<input type="text" class="form-control" name="username" placeholder="email address">
+					</div>
+					<span class="help-block"></span>
+										
+					<div class="input-group">
+						<span class="input-group-addon"><i class="fa fa-lock"></i></span>
+						<input  type="password" class="form-control" name="password" placeholder="Password">
+					</div>
+                    <span class="help-block">Password error</span>
+
+					<button class="btn btn-lg btn-primary btn-block" type="submit">Login</button>
+				</form>
+			</div>
+    	</div>
+		<div class="row omb_row-sm-offset-3">
+			<div class="col-xs-12 col-sm-3">
+				<label class="checkbox">
+					<input type="checkbox" value="remember-me">Remember Me
+				</label>
+			</div>
+			<div class="col-xs-12 col-sm-3">
+				<p class="omb_forgotPwd">
+					<a href="#">Forgot password?</a>
+				</p>
+			</div>
+		</div>	    	
+	</div>
+
+
+
+        </div>
+       
+       
+       
+       
         <h2 align="center">Registrierung</h2>
         <div class="container">
         <form action="/biertasting/index.html" method="GET">
             <div class=row>
-                <div class=col-md-6>
+                <div class=col-2></div>
+                <div class=col-md-5>
                     <p>
                     <div class=relative><strong>Name</strong></div>
                     <div class=relative><input type="text"></br></div>
                     </p>
                 </div>
-                <div class=col-md-6>
+                <div class=col-md-5>
                     <p>
                     <div class=relative><strong>Vorname</strong></div>
                     <div class=relative><input type="text"></br></div>
                     </p>
                 </div>
-                <div class=col-md-6>
+                <div class=col-2></div>
+                <div class=col-md-5>
                     <p>
                     <div class=relative><strong>Benutzername</strong></div>
                     <div class=relative><input type="text"/><br/></div>
                     </p>
                 </div>
-                <div class=col-md-6>
+                <div class=col-md-5>
                     <p>
                     <div class=relative><label for="gebdat"><strong>Geburtsdatum</strong></div>
                     <div class=relative><input type="date" id="gebdat" name=""></label></div>
                     </p>
                 </div>
-                <div class=col-md-6>
+                <div class=col-2></div>
+                <div class=col-md-5>
                     <div class=relative><label for="country"><strong>Land</strong></label></div>
                     <div class=relative>
                     <select id="country" name="country">
@@ -81,43 +171,69 @@
                         <option value="Österreich">Österreich</option>
                     </select></div>
                 </div>
+                <div class=col-md-5>
                     <p>
-                    <div class=relative><strong>Emailadresse</strong></div>
+                    <div class=relative><strong>E-mail-adresse</strong></div>
                     <div class=relative><input type="email" name="email"><br/></div>
                     </p>
-                <div class=col-md-6>
+                </div>
+                <div class=col-2></div>
+                <div class=col-md-5>
                     <p>
                     <div class=relative><strong>Passwort</strong></div>
                     <div class=relative><input type="password"/></div>
                     </p>
                 </div>
-                <div class=col-md-6>
+                <div class=col-md-5>
                     <p>
                     <div class=relative><strong>Passwort wiederholen</strong></div>
                     <div class=relative><input type="password"/></div>
                     </p>
                 </div>
-                <div class=col-md-6>
+                <div class=col-2></div>
+                <div class=col-md-3>
                     <p>
                     <div class=relative><strong>Männlich</strong></div>
                     <div class=relative><input type="checkbox" name="gender" value="male" /><br/></div>
                     </p>
                 </div>
-                <div class=col-md-6>
+                <div class=col-md-3>
                     <p>
                     <div class=relative><strong>Weiblich</strong></div>
                     <div class=relative><input type="checkbox" name="gender" value="female" /><br/></div>
                     </p>
                 </div>
+                <div class=col-12>
                     <p>
                     <div class=mitte><input type="submit" value="Weiter" /></div>
                     </p>
+                </div>
         </form>
         </div>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
 
-</body>
+<!--Start of Tawk.to Script-->
+<script type="text/javascript">
+var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+(function(){
+var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+s1.async=true;
+s1.src='https://embed.tawk.to/59fc5ffd198bd56b8c03921e/default';
+s1.charset='UTF-8';
+s1.setAttribute('crossorigin','*');
+s0.parentNode.insertBefore(s1,s0);
+})();
+</script>
+<!--End of Tawk.to Script-->
 
+
+</body>
+<var class="container-fluid">
+    <footer>
+    <var class="container-fluid">
+        <p class="text-center">© 2017<a style="color: var(--grey); text-decoration:none;" href="#"> Beertasting</a>, All rights reserved 2017.</p>
+    </footer>
+</var>
 </html>
