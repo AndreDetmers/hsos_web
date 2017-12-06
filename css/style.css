@@ -221,7 +221,7 @@ input[type=checkbox], select {
     border-radius: 4px;
     box-sizing: border-box;
 }
-input[type=submit] {
+.buttoncol {
     width: 150px;
     background-color: var(--c-blue);
     color: var(--grey);
@@ -241,7 +241,7 @@ input[type=date], select {
     box-sizing: border-box;
 }
 
-input[type=submit]:hover {
+.buttoncol:hover {
     background-color: var(--grey);
     color: white;
 }
@@ -470,4 +470,36 @@ footer{
 .navstyle {
     background-color: var(--c-blue);
     border-radius: 5px;
+}
+
+
+
+
+/* Navbar links */
+#navbar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px;
+  text-decoration: none;
+}
+
+
+.nav {
+	padding: 25px 0;
+	position: -webkit-sticky;
+}
+.header, .nav {
+	text-align: center;
+	color: #fff;
+}
+
+.sticky {
+  position: fixed;
+  width: 100%;
+  left: 0;
+  top: 0;
+  z-index: 100;
+  border-top: 0;
 }

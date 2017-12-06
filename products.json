@@ -1,15 +1,17 @@
 {
 	"products": [
-		{ "name": "Krombacher", "price": 12.99, "imageUrl": "/master/images/krombacher.jpg"},
-		{ "name": "Herforder", "price": 10.99, "imageUrl": "/master/images/herforder.jpg"},
-		{ "name": "Veltins", "price": 12.99, "imageUrl": "/master/images/veltins.jpg" },
-		{ "name": "Paulaner", "price": 14.99, "imageUrl": "/master/images/Paulaner.png"},
-		{ "name": "Pott´s", "price": 14.99, "imageUrl": "/master/images/pott´s.jpg"},
-		{ "name": "Heineken", "price": 13.99, "imageUrl": "/master/images/heineken.jpg"},
-		{ "name": "Rolick", "price": 12.49, "imageUrl": "/master/images/Rolinck.jpg"},
-		{ "name": "Tegernseer", "price": 14.99, "imageUrl": "/master/images/tegernseer_hell.jpg"}
-],
+		{ "name": "Krombacher", "price": 12.99, "imageUrl": "images/krombacher.jpg" },
+		{ "name": "Herforder", "price": 10.99, "imageUrl": "images/herforder.jpg" },
+		{ "name": "Veltins", "price": 12.99, "imageUrl": "images/veltins.jpg" },
+		{ "name": "Paulaner", "price": 14.99, "imageUrl": "images/Paulaner.png" },
+		{ "name": "Pott´s", "price": 14.99, "imageUrl": "images/pott´s.jpg" },
+		{ "name": "Heineken", "price": 13.99, "imageUrl": "images/heineken.jpg" },
+		{ "name": "Rolick", "price": 12.49, "imageUrl": "images/Rolinck.jpg" },
+		{ "name": "Tegernseer", "price": 14.99, "imageUrl": "images/tegernseer_hell.jpg" }
+	],
 	"news": [
-		{ "name": "hier könnte ihre Werbung stehen!","imageUrl": "hier kommt ein bild hin!", "linkname": "!hier klicken!", "link": "biere.html"}
-]
+		{ "name": "Nur heute 2 Kisten Krombacher zum Preis von 3!!!", "imageUrl": "images/krombacher.jpg", "linkname": "Schlagen sie zu!", "link": "biere.html" },
+		{ "name": "Saisonangebot aus Bayern! Tegernseer im Angebot für 9.99!", "imageUrl": "images/tegernseer_hell.jpg", "linkname": "!hier klicken!", "link": "biere.html" },
+		{ "name": "hier könnte ihre Werbung stehen!", "imageUrl": "images/bier.jpg", "linkname": "!hier klicken!", "link": "biere.html" }
+	]
 }

@@ -1,0 +1,5 @@
+	[
+	{ "name": "Nur heute 2 Kisten Krombacher zum Preis von 3!!!", "imageUrl": "images/krombacher.jpg", "linkname": "Schlagen sie zu!", "link": "biere.html" },
+	{ "name": "Saisonangebot aus Bayern! Tegernseer im Angebot für 9.99!", "imageUrl": "images/tegernseer_hell.jpg", "linkname": "!hier klicken!", "link": "biere.html" },
+	{ "name": "hier könnte ihre Werbung stehen!", "imageUrl": "images/bier.jpg", "linkname": "!hier klicken!", "link": "biere.html" }
+	]

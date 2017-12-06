@@ -1,0 +1,29 @@
+{
+  "rules": {
+    
+    "products": {
+      ".read": "true",
+      ".write": "false"
+    },
+    
+    "news": {
+      ".read": "true",
+      ".write": "false"
+    },
+    
+    "userprofiles": {
+      "$uid": {
+        ".read": true,
+        ".write": "auth.uid == $uid",
+        ".validate": 
+          "newData.child('beer').isString() &&
+           newData.child('city').isString() &&
+           newData.child('country').isString() &&
+           newData.child('street').isString() &&
+           newData.child('username').isString() &&
+           newData.child('zip').isString()"
+      }
+    }
+  }
+}
+
