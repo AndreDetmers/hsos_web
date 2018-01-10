@@ -12,7 +12,7 @@ Hier unser css-Dokument
 }
 
 html {
-    background-image: url(/master/images/hintergrund.jpg);
+    
     background-color: var(--beige);
 }
  
@@ -503,3 +503,21 @@ footer{
   z-index: 100;
   border-top: 0;
 }
+
+.row{
+    padding-top: 20px;
+}
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.bewertungAbgeben {
+    float: right;
+}
+
+.facebookbutton{
+    padding-left: 30%;
+    padding-right: 30%;
+    }
+

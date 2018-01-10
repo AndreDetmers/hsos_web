@@ -1,8 +1,4 @@
 /* global firebase*/
-function alter() {
-    alert("Bist du bereits 16 Jahre oder älter?");
-
-}
 
 function initFirebase() {
     var config = {
@@ -36,7 +32,6 @@ function addProductToBlock(product) {
     div.classList += "biere";
     block.appendChild(div);
 }
-
 /*Newsanzeige an der Seite*/
 function newsliste() {
     var newsRef = firebase.database().ref('news')
@@ -101,8 +96,7 @@ function loginChanged(user) {
                 createExtendedUserProfile();
             }
         });
-        var emailVerified = user.emailVerified;
-        if (emailVerified === false) { sendVerificationEMail(); }
+        checkEmailVerified();
 
     }
     else {
@@ -118,6 +112,7 @@ function loginChanged(user) {
 
 function createExtendedUserProfile() {
     var user = firebase.auth().currentUser;
+    console.dir(user);
 
     // Make sure we have a logged in user
     if (user) {
@@ -208,12 +203,11 @@ function checkEmailVerified() {
     var emailVerified = user.emailVerified;
     if (emailVerified === false) {
         document.getElementById("welcomeTitle").innerText = "Welcome " + user.email;
-        document.getElementById("welcomeText").innerHTML = "Please verify your account by clicking the button below!";
         document.getElementById("btnVerify").removeAttribute("hidden");
     }
     else {
         document.getElementById("welcomeTitle").innerText = "Welcome " + user.email;
-        document.getElementById("welcomeText").innerHTML = "Your account email has been verified!";
+
     }
 }
 
@@ -275,4 +269,48 @@ function updateDisplay() {
         document.getElementById("inputBeer").value = value.val().beer;
         document.getElementById("inputCheckboxNewsletter").checked = value.val().subscribeNewsletter;
     })
+}
+
+function loginFacebook() {
+    var provider = new firebase.auth.FacebookAuthProvider();
+    provider.addScope('publish_actions');
+
+    firebase.auth().signInWithPopup(provider).then(function(result) {
+        // This gives you a Google Access Token. You can use it to access the Google API.
+        var token = result.credential.accessToken;
+        // The signed-in user info.
+        var user = result.user;
+        // ...
+    }).catch(function(error) {
+        // Handle Errors here.
+        var errorCode = error.code;
+        var errorMessage = error.message;
+        // The email of the user's account used.
+        var email = error.email;
+        // The firebase.auth.AuthCredential type that was used.
+        var credential = error.credential;
+        // ...
+    });
+}
+
+
+function loginGoogle() {
+    var provider = new firebase.auth.GoogleAuthProvider();
+    
+    firebase.auth().signInWithPopup(provider).then(function(result) {
+        // This gives you a Google Access Token. You can use it to access the Google API.
+        var token = result.credential.accessToken;
+        // The signed-in user info.
+        var user = result.user;
+        // ...
+    }).catch(function(error) {
+        // Handle Errors here.
+        var errorCode = error.code;
+        var errorMessage = error.message;
+        // The email of the user's account used.
+        var email = error.email;
+        // The firebase.auth.AuthCredential type that was used.
+        var credential = error.credential;
+        // ...
+    });
 }

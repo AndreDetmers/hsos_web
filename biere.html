@@ -10,6 +10,32 @@
     </title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.1/js/all.js"></script>
+    <style>
+        .product {
+            margin: 32px;
+        }
+
+        .card {
+            width: 100%;
+        }
+
+        .rate {
+            color: gray;
+        }
+
+        .rate .down {
+            color: red;
+        }
+
+        .rate .up {
+            color: green;
+        }
+
+        .rate svg {
+            margin: 8px;
+        }
+    </style>
 </head>
 
 <body>
@@ -29,25 +55,25 @@
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="navbar-nav mr-auto">
                             <li class="nav-item">
-                                <a class="nav-link" href="/master/index.html">Home</a>
+                                <a class="nav-link" href="index.html">Home</a>
                             </li>
                             <li class="nav-item active">
                             </li>
-                             <li class="nav-item">
+                            <li class="nav-item">
                                 <div class="dropdown">
-                                <a class="nav-link active" href="/master/biere.html">Biere</a>
-                               <div class="dropdown-content">
-                                    <a href="#">Nationale Biere</a>
-                                    <a href="#">Internationale Biere</a>
-                                    <a href="#">Sonderangebote</a>
+                                    <a class="nav-link active" href="biere.html">Biere</a>
+                                    <div class="dropdown-content">
+                                        <a href="#">Nationale Biere</a>
+                                        <a href="#">Internationale Biere</a>
+                                        <a href="#">Sonderangebote</a>
                                     </div>
-                                 </div> 
+                                </div>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="/master/kontakt.html">Kontakt</a>
+                                <a class="nav-link" href="kontakt.html">Kontakt</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="/master/registrierung.html">Anmeldung</a>
+                                <a class="nav-link" href="registrierung.html">Anmeldung</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="#">Warenkorb</a>
@@ -66,6 +92,29 @@
                         <!-- Hier wird Inhalt dynamisch eingefügt -->
                     </div>
                     <div class="col-md-9">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <h4 align=center>Gefällt euch die Seite? Dann teilt sie doch auf Facebook</h4>
+                                </div>
+                                <div class="facebookbutton omb_login">
+                                    <div class="omb_socialButtons">
+                                        <a class="btn btn-lg omb_btn-facebook" href="https://www.facebook.com/sharer/sharer.php?u=beertasting-osna.firebaseapp.com">
+                  <i class="fa fa-facebook visible-xs"></i>
+			        <span class="hidden-xs"> Auf Facebook teilen</span>
+			        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row" id="anmelden" hidden>
+                                <button class="buttoncol"><a class="button" href="registrierung.html">Anmelden</a>
+                                    
+                                </button>
+                            </div>
+                            <div class="row" id="uebersicht">
+                                <!-- Hier wird Inhalt dynamisch eingefügt -->
+                            </div>
+                        </div>
                         <div class="container-fluid">
                             <div class="row" id="biercontainer">
                                 <!-- Hier wird Inhalt dynamisch eingefügt -->
@@ -75,33 +124,19 @@
                 </div>
                 <script src="https://www.gstatic.com/firebasejs/4.6.1/firebase-app.js"></script>
                 <script src="https://www.gstatic.com/firebasejs/4.6.1/firebase-database.js"></script>
-                <script src="js/myScript1.js"></script>
+                <script src="https://www.gstatic.com/firebasejs/4.6.2/firebase-auth.js"></script>
+                <script src="js/myScript2.js"></script>
                 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
                 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
                 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
 
                 <script type="text/javascript">
-                    
-                    bierliste();
                     newsliste();
+                    counter();
                     
                 </script>
 
-                <!--Start of Tawk.to Script-->
-                <script type="text/javascript">
-                    var Tawk_API = Tawk_API || {},
-                        Tawk_LoadStart = new Date();
-                    (function() {
-                        var s1 = document.createElement("script"),
-                            s0 = document.getElementsByTagName("script")[0];
-                        s1.async = true;
-                        s1.src = 'https://embed.tawk.to/59fc5ffd198bd56b8c03921e/default';
-                        s1.charset = 'UTF-8';
-                        s1.setAttribute('crossorigin', '*');
-                        s0.parentNode.insertBefore(s1, s0);
-                    })();
-                </script>
-                <!--End of Tawk.to Script-->
+
 
 
 </body>

@@ -25,13 +25,13 @@
                         <div class="collapse navbar-collapse" id="navbarSupportedContent">
                             <ul class="navbar-nav mr-auto">
                                 <li class="nav-item">
-                                    <a class="nav-link" href="/master/index.html">Home</a>
+                                    <a class="nav-link" href="index.html">Home</a>
                                 </li>
                                 <li class="nav-item active">
                                 </li>
                                 <li class="nav-item">
                                     <div class="dropdown">
-                                        <a class="nav-link" href="/master/biere.html">Biere</a>
+                                        <a class="nav-link" href="biere.html">Biere</a>
                                         <div class="dropdown-content">
                                             <a href="#">Link 1</a>
                                             <a href="#">Link 2</a>
@@ -39,10 +39,10 @@
                                         </div>
                                     </div>
                                     <li class="nav-item">
-                                        <a class="nav-link" href="/master/kontakt.html">Kontakt</a>
+                                        <a class="nav-link" href="kontakt.html">Kontakt</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link active" href="/master/registrierung.html" id="displayusername">Anmeldung</a>
+                                        <a class="nav-link active" href="registrierung.html" id="displayusername">Anmeldung</a>
                                     </li>
                                     <li class="nav-item">
                                         <a class="nav-link" href="#">Warenkorb</a>
@@ -60,27 +60,21 @@
                     <div class="col-md-3">
 
                     </div>
-                    <div class="col-md-6">
+                    <div class="col-md-6" id="loginhide">
                         <div class="omb_login" id="usernamebar">
                             <h3 class="omb_authTitle">Anmeldung</a>
                             </h3>
                             <div class="row omb_socialButtons">
-                                <div class="col-md-4" style="float:left">
-                                    <a href="neu.html" class="btn btn-lg btn-block omb_btn-facebook">
+                                <div class="col-md-6" style="float:left">
+                                    <a class="btn btn-lg btn-block omb_btn-facebook" onclick="loginFacebook()">
 			        <i class="fa fa-facebook visible-xs"></i>
 			        <span class="hidden-xs">Facebook</span>
-		        </a>
+			     </a>
                                 </div>
-                                <div class="col-md-4">
-                                    <a href="neu.html" class="btn btn-lg btn-block omb_btn-twitter">
-			        <i class="fa fa-twitter visible-xs"></i>
-			        <span class="hidden-xs">Twitter</span>
-		        </a>
-                                </div>
-                                <div class="col-md-4">
-                                    <a href="neu.html" class="btn btn-lg btn-block omb_btn-google">
+                                <div class="col-md-6">
+                                    <a class="btn btn-lg btn-block omb_btn-google" onclick="loginGoogle()">
 			        <i class="fa fa-google-plus visible-xs"></i>
-			        <span class="hidden-xs">Google+</span>
+			        <span class="hidden-xs">Google</span>
 		        </a>
                                 </div>
                             </div>
@@ -139,7 +133,10 @@
                         </div>
                     </div>
                     <div class="col-12">
-                        <div class="mitte"><button class="buttoncol" id="btnLogout" id="btnLogout2" onclick="logout()" hidden>Logout</button></div>
+                        <div class="mitte">
+                            <button class="buttoncol" id="btnLogout" id="btnLogout2" onclick="logout()" hidden>Logout</button>
+                            <button id="btnVerify" onclick="sendVerificationEMail()" class="buttoncol" hidden>Send Verification Email</button>
+                        </div>
                     </div>
                 </div>
                 <hr>
